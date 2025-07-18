@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Bebas_Neue";
+  src: url("/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
+}
+@theme {
+  --font-bebas: "Bebas_Neue", sans-serif;
+}
+:root {
+  font-family: var(--font-bebas);
+  font-weight: 400;
+  background-image: url("./assets/image/bg.avif");
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #fff;
+  background-size: auto;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.header-bg {
+  background-image: url("./assets/image/headerbg.avif");
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.sidebar-bg {
+  background-image: url("./assets/image/bg.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@keyframes smooth-bounce {
+  0%, 100% { 
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% { 
+    transform: translateY(-25px);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-smooth-bounce {
+  animation: smooth-bounce 1.5s ease-in-out infinite;
+}
+
+/* 关键：防止频闪的平滑停止 */
+.group:not(:hover) .animate-smooth-bounce {
+  animation: none;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+}
