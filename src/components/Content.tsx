@@ -27,7 +27,7 @@ const links: Link[] = [
 
 const Content = () => {
   return (
-    <section className="w-full py-32 px-4 ">
+    <section className="w-full  md:py-32 px-4 ">
       <div className="max-w-7xl mx-auto flex justify-center items-center">
         {/* Responsive Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-8 ">
@@ -37,12 +37,12 @@ const Content = () => {
               href={link.link}
               className="block text-center hover:pointer-events-auto group"
             >
-              <div className={`w-full `}>
+              <div className={`w-full mb-4`}>
                 <img
                   src={link.img}
                   alt={link.title}
-                  className={`w-full  group-hover:animate-bounce  h-auto object-cover ${
-                    index === 1 ? "-translate-y-14" : ""
+                  className={`w-full  md:group-hover:animate-bounce  h-auto object-cover ${
+                    index === 1 ? "md:-translate-y-14" : ""
                   }`}
                 />
                 <h2 className="text-[#9e5f1b] text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mt-4 text-center">
