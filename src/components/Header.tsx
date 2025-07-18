@@ -301,10 +301,12 @@ const Header = () => {
           </div>
         </div>
         <a
-          href="#social"
+          href="https://x.com/i/communities/1945055098528522639"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-[#9e5f1b] no-underline font-black transition-all duration-300 hover:text-[#7a4915] relative after:content-[''] after:absolute after:w-0 after:h-1 after:bg-[#7a4915] after:left-0 after:-bottom-2 after:transition-all after:duration-300 hover:after:w-full italic"
         >
-          X
+          Twitter
         </a>
       </div>
 
@@ -343,7 +345,9 @@ const Header = () => {
           <nav className="mt-16 flex flex-col gap-8">
             {/* Buy Links Section */}
             <div className="border-b border-[rgba(158,95,27,0.2)] pb-4">
-              <h3 className="text-[#9e5f1b] text-2xl font-black mb-4">BUY NIUMA</h3>
+              <h3 className="text-[#9e5f1b] text-2xl font-black mb-4">
+                BUY NIUMA
+              </h3>
               {buyLinks.map((item) => (
                 <a
                   key={item.title}
