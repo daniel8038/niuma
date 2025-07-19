@@ -248,19 +248,27 @@ const Header = () => {
 
               {/* English Description */}
               <div className="mb-4">
-                <p className="text-[#9e5f1b] text-sm leading-relaxed">
-                  <strong>"Niúmǎ"</strong> (literally "cow and horse") is a
-                  self-deprecating term used in Chinese internet culture to
-                  describe people who work tirelessly like beasts of
-                  burden—diligent, obedient, and uncomplaining.
+                <p className="text-[#7a4915] text-sm leading-relaxed ">
+                  {/* <strong>"Niúmǎ"</strong> (literally "cow and horse") <br />{" "} */}
+                  "Niúmǎ" was originally a self-mockery among wage workers, but
+                  now it has evolved into a metaphor for builders in Web3. We
+                  wear the hide of an ox, yet conceal the heart of a horse—being
+                  both "tools" and dreamers. With a light touch, we convey
+                  genuine emotions and employ humorous narratives to satirize
+                  power. We believe that on this absurd blockchain stage, only
+                  by persisting in building and achieving self-awakening can we
+                  forge a collective narrative that belongs to the group.
+                  "Niúmǎ" is no longer just "Niúmǎ"; it is a mask of clarity and
+                  a wild will.
                 </p>
               </div>
 
               {/* Chinese Description */}
               <div className="mb-4">
                 <p className="text-[#7a4915] text-sm leading-relaxed">
-                  <strong>"牛马"</strong>{" "}
-                  在中国网络语境中是一种自嘲式比喻，指的是像牛和马一样辛苦劳作、不抱怨、默默付出的人。
+                  <strong>"牛马"</strong> “牛马”原是打工人的自嘲，如今在 Web3
+                  变身 builder
+                  的隐喻。我们披着牛皮，藏着马心，既是工具人，也是造梦者。用轻盈的笔触讲述真实的情绪、幽默的叙事讽刺权力。我们相信，在链上这个荒诞舞台上，只有坚持建设与自我觉醒，才能走出属于群体的集体叙事。牛马不再只是牛马，它是清醒的面具，也是野性的意志。
                 </p>
               </div>
 
