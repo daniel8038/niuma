@@ -1,6 +1,7 @@
 import { memo, useState } from "react";
 import { logo } from "../assets/image";
 import ImageModal from "./ImagePack";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -203,12 +204,12 @@ const Header = () => {
         >
           NIUMA DAILY
         </a>
-        <a
-          href="/survey"
+        <Link
+          to="/survey"
           className="text-[#9e5f1b] no-underline font-black transition-all duration-300 hover:text-[#7a4915] relative after:content-[''] after:absolute after:w-0 after:h-1 after:bg-[#7a4915] after:left-0 after:-bottom-2 after:transition-all after:duration-300 hover:after:w-full"
         >
           survey
-        </a>
+        </Link>
         <img src={logo} alt="niuma logo" className="w-[20%] h-auto mb-4" />
         <div
           onClick={() => setIsImagesDropdownOpen(true)}
