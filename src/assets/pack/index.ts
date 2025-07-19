@@ -1,4 +1,3 @@
-import a from "./a.png";
 import b from "./b.png";
 import c from "./c.png";
 import d from "./d.png";
@@ -26,7 +25,6 @@ import y from "./y.png";
 import z from "./z.jpg";
 
 export const images = [
-  a,
   b,
   c,
   d,
