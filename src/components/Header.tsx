@@ -266,7 +266,7 @@ const Header = () => {
               {/* Chinese Description */}
               <div className="mb-4">
                 <p className="text-[#7a4915] text-sm leading-relaxed">
-                  <strong>"牛马"</strong> “牛马”原是打工人的自嘲，如今在 Web3
+                  <strong>"牛马"</strong> 原是打工人的自嘲，如今在 Web3
                   变身 builder
                   的隐喻。我们披着牛皮，藏着马心，既是工具人，也是造梦者。用轻盈的笔触讲述真实的情绪、幽默的叙事讽刺权力。我们相信，在链上这个荒诞舞台上，只有坚持建设与自我觉醒，才能走出属于群体的集体叙事。牛马不再只是牛马，它是清醒的面具，也是野性的意志。
                 </p>
