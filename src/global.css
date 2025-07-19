@@ -10,7 +10,6 @@
 :root {
   font-family: var(--font-bebas);
   font-weight: 400;
-  background-image: url("./assets/image/bg.avif");
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #fff;
@@ -19,6 +18,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.app {
+  background-image: url("./assets/image/bg.avif");
+  background-size: auto;
 }
 .header-bg {
   background-image: url("./assets/image/headerbg.avif");
@@ -34,11 +37,12 @@
   background-repeat: no-repeat;
 }
 @keyframes smooth-bounce {
-  0%, 100% { 
+  0%,
+  100% {
     transform: translateY(0);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
-  50% { 
+  50% {
     transform: translateY(-25px);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
