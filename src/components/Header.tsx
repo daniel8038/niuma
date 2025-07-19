@@ -1,10 +1,12 @@
 import { memo, useState } from "react";
 import { logo } from "../assets/image";
+import ImageModal from "./ImagePack";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isBuyDropdownOpen, setIsBuyDropdownOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+  const [isImagesDropdownOpen, setIsImagesDropdownOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -202,14 +204,12 @@ const Header = () => {
           NIUMA DAILY
         </a>
         <img src={logo} alt="niuma logo" className="w-[20%] h-auto mb-4" />
-        <a
-          href="https://t.me/+iM32lmiR_NhiMTc1"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          onClick={() => setIsImagesDropdownOpen(true)}
           className="text-[#9e5f1b] no-underline font-black transition-all duration-300 hover:text-[#7a4915] relative after:content-[''] after:absolute after:w-0 after:h-1 after:bg-[#7a4915] after:left-0 after:-bottom-2 after:transition-all after:duration-300 hover:after:w-full"
         >
           STICKER PACK
-        </a>
+        </div>
         {/* ABOUT with Dropdown */}
         <div
           className="relative"
@@ -266,8 +266,8 @@ const Header = () => {
               {/* Chinese Description */}
               <div className="mb-4">
                 <p className="text-[#7a4915] text-sm leading-relaxed">
-                  <strong>"牛马"</strong> 原是打工人的自嘲，如今在 Web3
-                  变身 builder
+                  <strong>"牛马"</strong> 原是打工人的自嘲，如今在 Web3 变身
+                  builder
                   的隐喻。我们披着牛皮，藏着马心，既是工具人，也是造梦者。用轻盈的笔触讲述真实的情绪、幽默的叙事讽刺权力。我们相信，在链上这个荒诞舞台上，只有坚持建设与自我觉醒，才能走出属于群体的集体叙事。牛马不再只是牛马，它是清醒的面具，也是野性的意志。
                 </p>
               </div>
@@ -407,6 +407,10 @@ const Header = () => {
           </nav>
         </div>
       </div>
+      <ImageModal
+        isOpen={isImagesDropdownOpen}
+        onClose={() => setIsImagesDropdownOpen(false)}
+      />
     </header>
   );
 };
