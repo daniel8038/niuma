@@ -197,7 +197,7 @@ const Header = () => {
         </div>
 
         <a
-          href="https://x.com/maj_c1/highlights"
+          href="https://x.com/BuilderNiuma/highlights"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#9e5f1b] no-underline font-black transition-all duration-300 hover:text-[#7a4915] relative after:content-[''] after:absolute after:w-0 after:h-1 after:bg-[#7a4915] after:left-0 after:-bottom-2 after:transition-all after:duration-300 hover:after:w-full"
@@ -378,7 +378,7 @@ const Header = () => {
               ))}
             </div>
             <a
-              href="https://x.com/maj_c1/highlights"
+              href="https://x.com/BuilderNiuma/highlights"
               target="_blank"
               rel="noopener noreferrer"
               onClick={toggleMobileMenu}
